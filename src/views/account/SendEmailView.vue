@@ -178,16 +178,16 @@
 
            notify({
                 type: "success",
-                title: "Email was sent",
-                text: "Sent!",
+                title: "Saved!",
+                text: "Email was sent to the server, check its stauts in the main page",
             });
-            
+
            router.push('/mailer/emails')
         } catch (err) {
             notify({
                 type: "error",
                 title: "Something went wrong!",
-                text: "Please review the data youa re sending",
+                text: "Please review the data you are sending",
             });
            errors.value = err.response.data.errors;
         }

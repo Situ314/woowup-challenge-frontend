@@ -2,7 +2,6 @@
     <router-link 
         class="
             float-right
-            bg-transparent
             font-semibold
             py-2
             px-4
