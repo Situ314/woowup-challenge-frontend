@@ -53,7 +53,7 @@
             <div class="w-full md:w-1/6 px-3">
                 <div>
                     <button 
-                        class="w-full bg-orange-500 mt-6 bg-transparent 
+                        class="w-full bg-orange-500 mt-6
                         hover:bg-orange-400 text-white font-semibold
                         hover:text-white py-2 px-4 border 
                         border-orange-400 hover:border-transparent rounded"
@@ -89,7 +89,7 @@
             <div class="w-full md:w-1/6 px-3">
                 <div>
                     <button 
-                        class="w-full bg-orange-500 mt-6 bg-transparent 
+                        class="w-full bg-orange-500 mt-6
                         hover:bg-orange-400 text-white font-semibold
                         hover:text-white py-2 px-4 border 
                         border-orange-400 hover:border-transparent rounded"

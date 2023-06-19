@@ -8,7 +8,7 @@
             border
             rounded
             text-white
-            bg-green-600
+            bg-teal-600
             no-underline
         "
         :class="[color ? 'hover:bg-teal-500 hover:border-teal-500' : '']"
