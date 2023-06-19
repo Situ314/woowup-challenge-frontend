@@ -8,10 +8,10 @@
             px-4
             border
             rounded
-            bg-teal-700
+            bg-teal-600
             text-white
         "
-        :class="[color ? 'hover:bg-teal-600 border-' + color + '-600' : '']"
+        :class="[color ? 'hover:bg-teal-500 border-' + color + '-500' : '']"
         :to="url"
     >
         {{ btnText}}

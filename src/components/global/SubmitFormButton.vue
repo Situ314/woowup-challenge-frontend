@@ -9,10 +9,10 @@
             border
             rounded
             text-white
-            bg-teal-700
+            bg-teal-600
             no-underline
         "
-        :class="[color ? 'hover:bg-teal-600 hover:border-teal-600' : '']"
+        :class="[color ? 'hover:bg-teal-500 hover:border-teal-500' : '']"
         @click="$emit('submit', true)"
     >
         <i class=""></i>{{ btnText }}
