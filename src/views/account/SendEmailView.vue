@@ -135,6 +135,9 @@
     import { useRouter } from 'vue-router'
     import axios from 'axios'
 
+    import { useNotification } from "@kyvg/vue3-notification";
+
+    const { notify }  = useNotification()
     const userStore = useUserStore()
     const router = useRouter()
 
@@ -173,9 +176,19 @@
         try {
            await axios.post('api/send-email/', data)
 
+           notify({
+                type: "success",
+                title: "Email was sent",
+                text: "Sent!",
+            });
+            
            router.push('/mailer/emails')
         } catch (err) {
-            console.log(err);
+            notify({
+                type: "error",
+                title: "Something went wrong!",
+                text: "Please review the data youa re sending",
+            });
            errors.value = err.response.data.errors;
         }
     }

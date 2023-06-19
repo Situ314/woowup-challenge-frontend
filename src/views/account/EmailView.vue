@@ -49,7 +49,7 @@
                         <p class="text-gray-900 text-sm font-semibold leading-none">{{ userStore.name }}</p>
                         <p class="text-gray-600 text-xs">Created at {{ mail.created_at }}</p>
                         <p v-if="mail.status == 'sent'" class="text-teal-500 text-xs font-semibold">{{ mail.comments }}</p>
-                        <p v-else-if="mail.status == 'failed'" class="text-rose-200">{{ mail.comments }}</p>
+                        <p v-else-if="mail.status == 'failed'" class="text-rose-500 text-xs font-semibold">{{ mail.comments }}</p>
                     </div>
                 </div> 
             </div>
