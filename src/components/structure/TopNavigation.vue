@@ -18,7 +18,7 @@
                 <div class="text-black">
           <h1 class="text-2xl mb-1">About:</h1>
           <p class="mb-4">
-            This small email app allows you to send emails to one person, but to multiple CCs or BCCs. The forntend is made using Vue 3 + Pinia + Tailwind CSS. The backend uses Laravel. 
+            This small email app allows you to send emails to multiple users, you can add CCs or BCCs. The frontend is made using Vue 3 + Pinia + Tailwind CSS. The backend uses Laravel. 
           </p>
           <p class="mb-4">
             A default email (woowup.challenge@gmail.com) is used to send, the purpose of registering and using an email in the login is to give you authentication security, this is made with Laravel Sanctum. At the moment, it does not verify if the entered email is valid, since it is not used for sending emails, but rather works more like a username, so it must be unique through the platform.
