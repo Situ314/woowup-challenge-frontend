@@ -10,7 +10,6 @@ export const useUserStore = defineStore('user', {
   }),
   actions: {
     setUserDetails(res) {
-        console.log('setUserDetails', res.data)
         this.$state.id = res.data.user.id
         this.$state.token = res.data.token
         this.$state.name = res.data.user.name

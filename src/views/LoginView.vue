@@ -91,7 +91,6 @@
       router.push('/mailer/emails/')
 
     } catch (err) {
-      console.log(err);
       errors.value = err.response.data.errors
     }
 

@@ -70,7 +70,7 @@ const logout = async () => {
         router.push('/')
 
     } catch (err) {
-        console.log(err)
+        
     }
 }
 

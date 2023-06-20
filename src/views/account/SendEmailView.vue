@@ -229,17 +229,23 @@
     }
 
     const addCC = async () => {
-      ccAdded.push(ccAdd.value);
-      const message = ccAdd.value;
-      const currentMessage = ccFinal.value ? ccFinal.value+';' : ''
-      ccFinal.value = currentMessage + message;
+        if(ccAdd.value){
+            ccAdded.push(ccAdd.value);
+            const message = ccAdd.value;
+            const currentMessage = ccFinal.value ? ccFinal.value+';' : ''
+            ccFinal.value = currentMessage + message;
+            ccAdd.value = '';
+        }
     }
 
     const baddCC = async () => {
-      bccAdded.push(bccAdd.value);
-      const message = bccAdd.value;
-      const currentMessage = bccFinal.value ? bccFinal.value+';' : ''
-      bccFinal.value = currentMessage + message;
+        if(bccAdd.value){
+            bccAdded.push(bccAdd.value);
+            const message = bccAdd.value;
+            const currentMessage = bccFinal.value ? bccFinal.value+';' : ''
+            bccFinal.value = currentMessage + message;
+            bccAdd.value = '';
+        }
     }
 
     const addRecipient = async () => {
